@@ -17,7 +17,7 @@
     <!-- Script to switch pages-->
     <script>
       function switch_page(page) {
-        const pages = ["about_page", "publications_page", "projects_page"];
+        const pages = ["about_page", "publications_page"]; 
         pages.forEach(item => document.getElementById(item).style.display='none');
         document.getElementById(page).style.display='block';
         return false;
@@ -32,7 +32,6 @@
     $(document).ready(function(){
         $("#about_page").load("https://danielseussler.github.io/about.html");
         $("#publications_page").load("https://danielseussler.github.io/publications.html");
-        $("#projects_page").load("https://danielseussler.github.io/projects.html");
     });
     </script>
 
@@ -46,7 +45,7 @@
         <div align="middle" style="margin-bottom: 40px;">
           <img src="img/image.jpg" style="border-radius: 30%; width: 75%; height: 75%;">
           <p></p><h2>Daniel Seussler Becerra</h2>
-          <h4><p style="line-height:1.0"></p></h4>
+          <h4><p style="line-height:1.0">Junior Data Analyst at C4ED</p></h4>
           <p style="line-height:0.5">daniel dot seussler at outlook dot de</p>
         </div>
 
@@ -57,9 +56,6 @@
           <a href="https://github.com/danielseussler" style="margin-right:16px;">
             <i class="fa fa-github" style="font-size:24px;"></i>
           </a>
-          <a href="https://orcid.org/0000-0002-1683-1779" style="margin-right:16px;">
-            <i class="fa-brands fa-orcid" style="font-size:24px;"></i>
-          </a>
           <br><br>
         </div>
 
@@ -67,8 +63,6 @@
           <a href="#" onclick="return switch_page('about_page');">About me</a>
           <br>
           <a href="#" onclick="return switch_page('publications_page');">Publications</a>
-          <br>
-          <a href="#" onclick="return switch_page('projects_page');">Projects</a>
         </div>
       </header>
       <section>
@@ -76,9 +70,6 @@
         </div>
 
         <div id="publications_page" style="display:none">
-        </div>
-          
-        <div id="projects_page" style="display:none">
         </div>
       </section>
       <footer>
